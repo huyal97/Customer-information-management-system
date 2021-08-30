@@ -146,3 +146,5 @@ C:\Users\hyalc\source\repos\Customer-Management-System\API\bin\Debug\net5.0\zh-H
 C:\Users\hyalc\source\repos\Customer-Management-System\API\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\hyalc\source\repos\Customer-Management-System\API\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\API.csprojAssemblyReference.cache
+C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\CreateCustomer.cshtml.g.cs
+C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\ListCustomer.cshtml.g.cs

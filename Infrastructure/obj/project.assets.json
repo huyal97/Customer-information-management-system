@@ -5708,11 +5708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hyalc\\source\\repos\\Customer-management-system\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\hyalc\\source\\repos\\Customer-Management-System\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\hyalc\\source\\repos\\Customer-management-system\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\hyalc\\source\\repos\\Customer-Management-System\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\hyalc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hyalc\\source\\repos\\Customer-management-system\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\hyalc\\source\\repos\\Customer-Management-System\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hyalc\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -12,6 +12,5 @@ namespace Infrastructure.Entities
         public List<Address> Addresses { get; set; }
         public List<CustomerMail> Mails { get; set; }
         public List<CustomerPhone> PhoneNumbers { get; set; }
-
     }
 }

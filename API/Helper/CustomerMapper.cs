@@ -19,7 +19,8 @@ namespace API.Helper
 
             customer.Name = customerDto.Name;
             customer.LastName = customerDto.LastName;
-            
+            customer.TcKimlik = customerDto.TcKimlik;
+
             customer.Addresses.Add(customerDto.Address);
             customer.Mails.Add(customerDto.CustomerMail);
             customer.PhoneNumbers.Add(customerDto.CustomerPhoneNumber);

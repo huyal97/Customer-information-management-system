@@ -15,12 +15,7 @@
             <th>
                 Phone Number
             </th>
-            <th>
-                Customer Id
-            </th>
-            <th>
-                Id
-            </th>
+
             <th></th>
         </tr>
     </thead>
@@ -29,12 +24,6 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.PhoneNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
             </td>
             <td>
                 @Html.ActionLink("Edit", "UpdatePhone","Phone" ,new {  id=item.Id}) |

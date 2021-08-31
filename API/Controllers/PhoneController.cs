@@ -27,12 +27,14 @@ namespace API.Controllers
 
             return View(customer);
         }
+
         [HttpGet]
         public IActionResult CreatePhone(int id)
         {
             CustomerPhone customerPhone = new CustomerPhone { CustomerId = id };
             return View(customerPhone);
         }
+
         [HttpPost]
         public IActionResult CreatePhone(CustomerPhone customerPhone)
         {
@@ -40,12 +42,14 @@ namespace API.Controllers
             _genericRepository.Add(customerPhone);
             return RedirectToAction("ListPhone", new { Id = customerPhone.CustomerId });
         }
+
         [HttpGet]
         public IActionResult UpdatePhone(int id)
         {
             CustomerPhone customerPhone = _genericRepository.GetById(id);
             return View(customerPhone);
         }
+
         [HttpPost]
         public IActionResult UpdatePhone(CustomerPhone phone)
         {

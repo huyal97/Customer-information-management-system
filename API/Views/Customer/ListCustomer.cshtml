@@ -16,6 +16,9 @@
                 @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
+                Tc Kimlik
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
@@ -27,7 +30,7 @@
             <th>
                 Phone
             </th>
-            <th>               
+            <th>
             </th>
             <th>
             </th>
@@ -38,6 +41,9 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TcKimlik)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
@@ -52,9 +58,9 @@
                 @Html.DisplayFor(modelItem => item.PhoneNumbers[0].PhoneNumber)
             </td>
             <td>
-                @Html.ActionLink("Adresses", "ListAddress","Address",new {  id=item.Id }) |
-                @Html.ActionLink("Mails", "ListMail","Mail",new { id = item.Id }) |
-                @Html.ActionLink("Phones", "ListPhone","Phone" ,new { id = item.Id })
+                @Html.ActionLink("Adresses", "ListAddress", "Address", new { id = item.Id }) |
+                @Html.ActionLink("Mails", "ListMail", "Mail", new { id = item.Id }) |
+                @Html.ActionLink("Phones", "ListPhone", "Phone", new { id = item.Id })
             </td>
         </tr>
 }

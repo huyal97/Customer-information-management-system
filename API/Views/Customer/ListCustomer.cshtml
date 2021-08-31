@@ -53,8 +53,8 @@
             </td>
             <td>
                 @Html.ActionLink("Adresses", "ListAddress","Address",new {  id=item.Id }) |
-                @Html.ActionLink("Mails", "ListMail", new { id = item.Id }) |
-                @Html.ActionLink("Phones", "ListPhone", new { id = item.Id })
+                @Html.ActionLink("Mails", "ListMail","Mail",new { id = item.Id }) |
+                @Html.ActionLink("Phones", "ListPhone","Phone" ,new { id = item.Id })
             </td>
         </tr>
 }

@@ -40,5 +40,17 @@ namespace API.Controllers
             _genericRepository.Add(customerMail);
             return RedirectToAction("ListMail", new { Id = customerMail.CustomerId });
         }
+        [HttpGet]
+        public IActionResult UpdateMail(int id)
+        {
+            CustomerMail customerMail = _genericRepository.GetById(id);
+            return View(customerMail);
+        }
+        [HttpPost]
+        public IActionResult UpdateMail(CustomerMail customerMail)
+        {
+            _genericRepository.Update(customerMail);
+            return RedirectToAction("ListMail", new { Id = customerMail.CustomerId });
+        }
     }
 }

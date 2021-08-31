@@ -36,22 +36,6 @@ namespace Infrastructure.Data
             _context.Set<Customer>().Add(entity);
             _context.SaveChanges();
         }
-        public void AddAddress(Address entity)
-        {
-            _context.Set<Address>().Add(entity);
-            _context.SaveChanges();
-        }
-        public void AddMail(CustomerMail entity)
-        {
-            _context.Set<CustomerMail>().Add(entity);
-            _context.SaveChanges();
-        }
-        public void AddPhone(CustomerPhone entity)
-        {
-            _context.Set<CustomerPhone>().Add(entity);
-            _context.SaveChanges();
-        }
-
         public void Delete(Customer entity)
         {
             _context.Set<Customer>().Remove(entity);

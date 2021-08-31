@@ -44,8 +44,14 @@ namespace API.Controllers
         [HttpGet]
         public IActionResult UpdateAddress(int id)
         {
-            Address address = new Address { CustomerId = id };
+            Address address = _genericRepository.GetById(id);
             return View(address);
+        }
+        [HttpPost]
+        public IActionResult UpdateAddress(Address address)
+        {
+            _genericRepository.Update(address);
+            return RedirectToAction("ListAddress", new { Id = address.CustomerId });
         }
     }
 }

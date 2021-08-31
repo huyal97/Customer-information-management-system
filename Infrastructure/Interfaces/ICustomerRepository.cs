@@ -13,10 +13,6 @@ namespace Infrastructure.Interfaces
 
         void Add(Customer entity);
 
-        void AddAddress(Address entity);
-        void AddMail(CustomerMail entity);
-        void AddPhone(CustomerPhone entity);
-
         void Update(Customer entity);
 
         void Delete(Customer entity);

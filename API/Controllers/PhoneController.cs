@@ -38,7 +38,19 @@ namespace API.Controllers
         {
             customerPhone.Id = 0;
             _genericRepository.Add(customerPhone);
-            return RedirectToAction("ListMail", new { Id = customerPhone.CustomerId });
+            return RedirectToAction("ListPhone", new { Id = customerPhone.CustomerId });
+        }
+        [HttpGet]
+        public IActionResult UpdatePhone(int id)
+        {
+            CustomerPhone customerPhone = _genericRepository.GetById(id);
+            return View(customerPhone);
+        }
+        [HttpPost]
+        public IActionResult UpdatePhone(CustomerPhone phone)
+        {
+            _genericRepository.Update(phone);
+            return RedirectToAction("ListPhone", new { Id = phone.CustomerId });
         }
     }
 }

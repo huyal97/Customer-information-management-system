@@ -29,6 +29,7 @@ namespace API
         {
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<ICustomerMapper, CustomerMapper>();
+            services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
 
             services.AddControllersWithViews();
 

@@ -15,14 +15,12 @@ namespace Infrastructure.Data
         {
             _context = context;
         }
-
         public Customer GetById(int id)
         {
             return _context.Set<Customer>().Include(r=>r.Addresses)
                 .Include(r=>r.Mails)
                 .Include(r=>r.PhoneNumbers)
                 .FirstOrDefault(r=>r.Id == id);
-
         }       
         public IReadOnlyList<Customer> ListAll()
         {
@@ -63,6 +61,5 @@ namespace Infrastructure.Data
             _context.Set<Customer>().Attach(entity);
             _context.Entry(entity).State = EntityState.Modified;
         }
-
     }
 }

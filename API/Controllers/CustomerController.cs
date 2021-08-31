@@ -44,26 +44,7 @@ namespace API.Controllers
             _customerRepository.Add(customer);
 
             return RedirectToAction("ListCustomer");
-        }
-        public IActionResult ListAddress(int id)
-        {
-            Customer customer = _customerRepository.GetById(id);
-
-            return View(customer);
-        }
-        [HttpGet]
-        public IActionResult CreateAddress(int id)
-        {
-            Address address = new Address { CustomerId = id };
-            return View(address);
-        }
-        [HttpPost]
-        public IActionResult CreateAddress(Address address)
-        {
-            address.Id = 0;
-            _customerRepository.AddAddress(address);
-            return RedirectToAction("ListAddress", new { Id = address.CustomerId});
-        }
+        }       
         //Mail
         [HttpGet]
         public IActionResult ListMail(int id)
@@ -86,6 +67,28 @@ namespace API.Controllers
             return RedirectToAction("ListMail", new { Id = customerMail.CustomerId });
         }
 
+        //Phone
+
+        [HttpGet]
+        public IActionResult ListPhone(int id)
+        {
+            Customer customer = _customerRepository.GetById(id);
+
+            return View(customer);
+        }
+        [HttpGet]
+        public IActionResult CreatePhone(int id)
+        {
+            CustomerPhone mail = new CustomerPhone { CustomerId = id };
+            return View(mail);
+        }
+        [HttpPost]
+        public IActionResult CreatePhone(CustomerPhone customerPhone)
+        {
+            customerPhone.Id = 0;
+            _customerRepository.AddPhone(customerPhone);
+            return RedirectToAction("ListPhone", new { Id = customerPhone.CustomerId });
+        }
 
 
         //[HttpPost]

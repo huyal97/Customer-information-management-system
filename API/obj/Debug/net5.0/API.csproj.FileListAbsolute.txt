@@ -149,7 +149,9 @@ C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\API.
 C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\CreateCustomer.cshtml.g.cs
 C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\ListCustomer.cshtml.g.cs
 C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\UpdateCustomer.cshtml.g.cs
-C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\UpdateAddress.cshtml.g.cs
-C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\CreateAddress.cshtml.g.cs
 C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\ListMail.cshtml.g.cs
 C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\CreateMail.cshtml.g.cs
+C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\ListPhone.cshtml.g.cs
+C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\CreatePhone.cshtml.g.cs
+C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Address\CreateAddress.cshtml.g.cs
+C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Address\ListAddress.cshtml.g.cs

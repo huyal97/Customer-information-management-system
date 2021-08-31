@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Infrastructure.Entities
 {
-    public class CustomerPhone
+    public class CustomerPhone : BaseEntity
     {
-        public int Id { get; set; }
         public string PhoneNumber { get; set; }
         public int CustomerId { get; set; }
     }

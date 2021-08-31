@@ -151,3 +151,5 @@ C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razo
 C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\UpdateCustomer.cshtml.g.cs
 C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\UpdateAddress.cshtml.g.cs
 C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\CreateAddress.cshtml.g.cs
+C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\ListMail.cshtml.g.cs
+C:\Users\hyalc\source\repos\Customer-Management-System\API\obj\Debug\net5.0\Razor\Views\Customer\CreateMail.cshtml.g.cs

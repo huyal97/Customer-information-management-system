@@ -18,7 +18,10 @@ namespace Infrastructure.Data
 
         public Customer GetById(int id)
         {
-            return _context.Set<Customer>().Include(r=>r.Addresses).FirstOrDefault(r=>r.Id == id);
+            return _context.Set<Customer>().Include(r=>r.Addresses)
+                .Include(r=>r.Mails)
+                .Include(r=>r.PhoneNumbers)
+                .FirstOrDefault(r=>r.Id == id);
 
         }       
         public IReadOnlyList<Customer> ListAll()
@@ -29,6 +32,7 @@ namespace Infrastructure.Data
                 .Include(r => r.Mails)
                 .ToList();
         }
+        //Add
         public void Add(Customer entity)
         {
             _context.Set<Customer>().Add(entity);
@@ -39,6 +43,17 @@ namespace Infrastructure.Data
             _context.Set<Address>().Add(entity);
             _context.SaveChanges();
         }
+        public void AddMail(CustomerMail entity)
+        {
+            _context.Set<CustomerMail>().Add(entity);
+            _context.SaveChanges();
+        }
+        public void AddPhone(CustomerPhone entity)
+        {
+            _context.Set<CustomerPhone>().Add(entity);
+            _context.SaveChanges();
+        }
+
         public void Delete(Customer entity)
         {
             _context.Set<Customer>().Remove(entity);

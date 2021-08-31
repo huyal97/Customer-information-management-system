@@ -8,5 +8,6 @@ namespace Infrastructure.Entities
     {
         public int Id { get; set; }
         public string Mail { get; set; }
+        public int CustomerId { get; set; }
     }
 }

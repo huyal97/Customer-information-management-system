@@ -43,9 +43,9 @@ namespace API.Controllers
 
             _customerRepository.Add(customer);
 
-            return View();
+            return RedirectToAction("ListCustomer");
         }
-        public IActionResult UpdateAddress(int id)
+        public IActionResult ListAddress(int id)
         {
             Customer customer = _customerRepository.GetById(id);
 
@@ -62,8 +62,32 @@ namespace API.Controllers
         {
             address.Id = 0;
             _customerRepository.AddAddress(address);
-            return RedirectToAction("UpdateAddress", new { Id = address.CustomerId});
+            return RedirectToAction("ListAddress", new { Id = address.CustomerId});
         }
+        //Mail
+        [HttpGet]
+        public IActionResult ListMail(int id)
+        {
+            Customer customer = _customerRepository.GetById(id);
+
+            return View(customer);
+        }
+        [HttpGet]
+        public IActionResult CreateMail(int id)
+        {
+            CustomerMail mail = new CustomerMail { CustomerId = id };
+            return View(mail);
+        }
+        [HttpPost]
+        public IActionResult CreateMail(CustomerMail customerMail)
+        {
+            customerMail.Id = 0;
+            _customerRepository.AddMail(customerMail);
+            return RedirectToAction("ListMail", new { Id = customerMail.CustomerId });
+        }
+
+
+
         //[HttpPost]
         //public IActionResult CreateAddress(int id)
         //{

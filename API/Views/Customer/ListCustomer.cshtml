@@ -52,9 +52,9 @@
                 @Html.DisplayFor(modelItem => item.PhoneNumbers[0].PhoneNumber)
             </td>
             <td>
-                @Html.ActionLink("Adresses", "UpdateAddress", new {  id=item.Id }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Adresses", "ListAddress", new {  id=item.Id }) |
+                @Html.ActionLink("Mails", "ListMail", new { id = item.Id }) |
+                @Html.ActionLink("Phones", "ListPhone", new { id = item.Id })
             </td>
         </tr>
 }

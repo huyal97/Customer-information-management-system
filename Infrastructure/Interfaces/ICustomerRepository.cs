@@ -13,6 +13,8 @@ namespace Infrastructure.Interfaces
 
         void Add(Customer entity);
 
+        void AddAddress(Address entity);
+
         void Update(Customer entity);
 
         void Delete(Customer entity);

@@ -18,9 +18,9 @@ namespace Infrastructure.Data
 
         public Customer GetById(int id)
         {
-            return _context.Set<Customer>().Find(id);
-        }
+            return _context.Set<Customer>().Include(r=>r.Addresses).FirstOrDefault(r=>r.Id == id);
 
+        }       
         public IReadOnlyList<Customer> ListAll()
         {
             return _context.Set<Customer>()
@@ -32,6 +32,11 @@ namespace Infrastructure.Data
         public void Add(Customer entity)
         {
             _context.Set<Customer>().Add(entity);
+            _context.SaveChanges();
+        }
+        public void AddAddress(Address entity)
+        {
+            _context.Set<Address>().Add(entity);
             _context.SaveChanges();
         }
         public void Delete(Customer entity)

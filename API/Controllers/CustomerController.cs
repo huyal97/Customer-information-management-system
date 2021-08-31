@@ -45,5 +45,31 @@ namespace API.Controllers
 
             return View();
         }
+        public IActionResult UpdateAddress(int id)
+        {
+            Customer customer = _customerRepository.GetById(id);
+
+            return View(customer);
+        }
+        [HttpGet]
+        public IActionResult CreateAddress(int id)
+        {
+            Address address = new Address { CustomerId = id };
+            return View(address);
+        }
+        [HttpPost]
+        public IActionResult CreateAddress(Address address)
+        {
+            address.Id = 0;
+            _customerRepository.AddAddress(address);
+            return RedirectToAction("UpdateAddress", new { Id = address.CustomerId});
+        }
+        //[HttpPost]
+        //public IActionResult CreateAddress(int id)
+        //{
+        //    Customer customer = _customerRepository.GetById(id);
+
+        //    return View(customer);
+        //}
     }
 }

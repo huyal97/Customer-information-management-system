@@ -30,8 +30,8 @@ namespace API.Controllers
         [HttpGet]
         public IActionResult CreatePhone(int id)
         {
-            CustomerMail mail = new CustomerMail { CustomerId = id };
-            return View(mail);
+            CustomerPhone customerPhone = new CustomerPhone { CustomerId = id };
+            return View(customerPhone);
         }
         [HttpPost]
         public IActionResult CreatePhone(CustomerPhone customerPhone)

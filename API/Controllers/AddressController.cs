@@ -53,5 +53,11 @@ namespace API.Controllers
             _genericRepository.Update(address);
             return RedirectToAction("ListAddress", new { Id = address.CustomerId });
         }
+        public IActionResult DeleteAddress(int id, int customerId)
+        {
+            Address customerAddress = _genericRepository.GetById(id);
+            _genericRepository.Delete(customerAddress);
+            return RedirectToAction("ListAddress", new { Id = customerId });
+        }
     }
 }

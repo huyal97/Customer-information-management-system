@@ -14,12 +14,6 @@
             <th>
                 Mail
             </th>
-            <th>
-                CustomerId
-            </th>
-            <th>
-                Id
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -31,15 +25,8 @@
                     @Html.DisplayFor(modelItem => item.Mail)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.CustomerId)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Id)
-                </td>
-                <td>
                     @Html.ActionLink("Edit", "UpdateMail", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    @Html.ActionLink("Delete", "DeleteMail", new { id = item.Id,customerId=item.CustomerId })
                 </td>
             </tr>
         }

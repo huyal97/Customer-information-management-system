@@ -10,5 +10,6 @@ namespace Infrastructure.Interfaces
         public IReadOnlyList<T> ListAll();
         public void Add(T entity);
         public void Update(T entity);
+        public void Delete(T entity);
     }
 }

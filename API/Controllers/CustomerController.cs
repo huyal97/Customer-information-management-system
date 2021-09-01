@@ -44,7 +44,27 @@ namespace API.Controllers
             _customerRepository.Add(customer);
 
             return RedirectToAction("ListCustomer");
-        }       
-       
+        }
+        [HttpGet]
+        public IActionResult UpdateCustomer(int id)
+        {
+            Customer customer = _customerRepository.GetById(id);
+            return View(customer);
+        }
+        [HttpPost]
+        public IActionResult UpdateCustomer(Customer customer)
+        {
+            
+            _customerRepository.Update(customer);
+            return RedirectToAction("ListCustomer");
+        }
+        public IActionResult DeleteCustomer(int id)
+        {
+            Customer customer = _customerRepository.GetById(id);
+            _customerRepository.Delete(customer);
+
+            return RedirectToAction("ListCustomer");
+        }
+
     }
 }

@@ -14,9 +14,6 @@
     <thead>
         <tr>
             <th>
-                ID
-            </th>
-            <th>
                 City
             </th>
             <th>
@@ -34,9 +31,6 @@
     <tbody>
 @foreach (var item in Model.Addresses) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.City)
             </td>

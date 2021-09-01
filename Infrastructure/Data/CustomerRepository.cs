@@ -39,11 +39,13 @@ namespace Infrastructure.Data
         public void Delete(Customer entity)
         {
             _context.Set<Customer>().Remove(entity);
+            _context.SaveChanges();
         }
         public void Update(Customer entity)
         {
             _context.Set<Customer>().Attach(entity);
             _context.Entry(entity).State = EntityState.Modified;
+            _context.SaveChanges();
         }
     }
 }

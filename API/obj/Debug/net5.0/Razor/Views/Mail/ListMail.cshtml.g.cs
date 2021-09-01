@@ -26,8 +26,15 @@ using API.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\hyalc\source\repos\Customer-Management-System\API\Views\_ViewImports.cshtml"
+using API.Dtos;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8ca1e11453c79f4f50c7755f60da4af830d59e74", @"/Views/Mail/ListMail.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"596ee91360b297ff619c22751a25970a765dc05e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b07b8df4ba62c15b1ecfec4607072a72dac9fa16", @"/Views/_ViewImports.cshtml")]
     public class Views_Mail_ListMail : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Infrastructure.Entities.Customer>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "CreateMail", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -64,7 +71,7 @@ using API.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<h1>ListMail</h1>\r\n<p>\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ca1e11453c79f4f50c7755f60da4af830d59e743646", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ca1e11453c79f4f50c7755f60da4af830d59e743828", async() => {
                 WriteLiteral("Create New");
             }
             );

@@ -58,7 +58,9 @@
                 <td>
                     @Html.ActionLink("Adresses", "ListAddress", "Address", new { id = item.Id }) |
                     @Html.ActionLink("Mails", "ListMail", "Mail", new { id = item.Id }) |
-                    @Html.ActionLink("Phones", "ListPhone", "Phone", new { id = item.Id })
+                    @Html.ActionLink("Phones", "ListPhone", "Phone", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "DeleteCustomer", "Customer", new { id = item.Id }) |
+                    @Html.ActionLink("Update", "UpdateCustomer", "Customer", new { id = item.Id }) |
                 </td>
             </tr>
         }

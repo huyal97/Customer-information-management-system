@@ -26,8 +26,15 @@ using API.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\hyalc\source\repos\Customer-Management-System\API\Views\_ViewImports.cshtml"
+using API.Dtos;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"39fecf650655b495c30a9c0c01e46ea95b933b21", @"/Views/Phone/ListPhone.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"596ee91360b297ff619c22751a25970a765dc05e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b07b8df4ba62c15b1ecfec4607072a72dac9fa16", @"/Views/_ViewImports.cshtml")]
     public class Views_Phone_ListPhone : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Infrastructure.Entities.Customer>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "CreatePhone", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -65,7 +72,7 @@ using API.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<h1>ListPhone</h1>\r\n\r\n<p>\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39fecf650655b495c30a9c0c01e46ea95b933b213700", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39fecf650655b495c30a9c0c01e46ea95b933b213882", async() => {
                 WriteLiteral("Create New Phone");
             }
             );

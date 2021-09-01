@@ -23,8 +23,7 @@ namespace API.Controllers
         public IActionResult Index()
         {
             return View();
-        }
-        
+        }       
         public IActionResult ListCustomer()
         {
             IReadOnlyList<Customer> customers = _customerRepository.ListAll();
@@ -49,12 +48,11 @@ namespace API.Controllers
         public IActionResult UpdateCustomer(int id)
         {
             Customer customer = _customerRepository.GetById(id);
-            return View(customer);
+            return Ok(customer);
         }
         [HttpPost]
         public IActionResult UpdateCustomer(Customer customer)
-        {
-            
+        {            
             _customerRepository.Update(customer);
             return RedirectToAction("ListCustomer");
         }

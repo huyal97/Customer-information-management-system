@@ -4,25 +4,27 @@
     ViewData["Title"] = "ListCustomer";
 }
 
-<h1>ListCustomer</h1>
+<h1>Customers</h1>
 
 <p>
-    <a asp-action="CreateCustomer">Create New</a>
+    <a asp-action="CreateCustomer">Create New Customer</a>
 </p>
-<table class="table">
+<script type="text/javascript" charset="utf8">
+    $(document).ready(function () {
+        $('#tbl1').DataTable();
+    });
+</script>
+<table id="tbl1" class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
             <th>
                 Tc Kimlik
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+               Name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LastName)
+                Lastname
             </th>
             <th>
                 Email
@@ -32,37 +34,35 @@
             </th>
             <th>
             </th>
-            <th>
-            </th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TcKimlik)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mails[0].Mail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PhoneNumbers[0].PhoneNumber)
-            </td>
-            <td>
-                @Html.ActionLink("Adresses", "ListAddress", "Address", new { id = item.Id }) |
-                @Html.ActionLink("Mails", "ListMail", "Mail", new { id = item.Id }) |
-                @Html.ActionLink("Phones", "ListPhone", "Phone", new { id = item.Id })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TcKimlik)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mails[0].Mail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNumbers[0].PhoneNumber)
+                </td>
+                <td>
+                    @Html.ActionLink("Adresses", "ListAddress", "Address", new { id = item.Id }) |
+                    @Html.ActionLink("Mails", "ListMail", "Mail", new { id = item.Id }) |
+                    @Html.ActionLink("Phones", "ListPhone", "Phone", new { id = item.Id })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+

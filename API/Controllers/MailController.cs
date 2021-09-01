@@ -57,7 +57,6 @@ namespace API.Controllers
             CustomerMail customerMail = _genericRepository.GetById(id);
             _genericRepository.Delete(customerMail);
             return RedirectToAction("ListMail", new { Id = customerId });
-
         }
     }
 }

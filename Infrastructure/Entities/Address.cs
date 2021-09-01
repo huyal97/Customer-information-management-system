@@ -8,9 +8,11 @@ namespace Infrastructure.Entities
 {
     public class Address : BaseEntity
     {
-        
+        [Required]
         public string Street { get; set; }
+        [Required]
         public string City { get; set; }
+        [Required]
         public string State { get; set; }
         [MaxLength(5)]
         public string ZipCode { get; set; }
